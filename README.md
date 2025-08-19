@@ -52,7 +52,18 @@ Response:
   "confidence": 0.99
 }
 
+3. Model info
 
+GET /model-info
+
+Example response:
+
+{
+  "model_type": "LogisticRegression (with StandardScaler)",
+  "features": ["sepal_length","sepal_width","petal_length","petal_width"],
+  "class_names": ["setosa","versicolor","virginica"],
+  "metrics": {"accuracy": 0.9667}
+}
 
 
 
