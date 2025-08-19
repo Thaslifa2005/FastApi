@@ -132,3 +132,16 @@ Model achieves ~96–97% accuracy on test data.
 Predictions include confidence score from predict_proba.
 
 ✅ Deliverables
+1.main.py → FastAPI app (endpoints)
+
+2.train_model.py → training script
+
+3.make_dataset.py → dataset generator
+
+4.requirements.txt → dependencies
+
+5.README.md → documentation
+
+6.model.pkl + model_meta.json → trained model & metadata
+
+7.Dataset: data/iris.csv
