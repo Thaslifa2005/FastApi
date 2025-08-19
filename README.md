@@ -88,4 +88,26 @@ Response:
   ]
 }
 
+How to Run the Application
+1. Setup environment
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# Linux/Mac: source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
 
+2. Generate dataset
+python make_dataset.py
+
+
+This creates data/iris.csv.
+
+3. Train the model
+python train_model.py
+
+
+This creates:
+
+model.pkl (trained model)
+
+model_meta.json (metadata)
