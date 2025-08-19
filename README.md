@@ -111,3 +111,24 @@ This creates:
 model.pkl (trained model)
 
 model_meta.json (metadata)
+
+4. Start FastAPI server
+uvicorn main:app --reload
+
+
+Server will be available at:
+👉 http://127.0.0.1:8000
+
+Interactive API docs:
+👉 http://127.0.0.1:8000/docs
+
+Test page (bonus):
+👉 http://127.0.0.1:8000/test
+
+📈 Results
+
+Model achieves ~96–97% accuracy on test data.
+
+Predictions include confidence score from predict_proba.
+
+✅ Deliverables
