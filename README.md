@@ -65,6 +65,27 @@ Example response:
   "metrics": {"accuracy": 0.9667}
 }
 
+4. Bonus: Batch prediction
 
+POST /predict-batch
+
+Request:
+
+{
+  "items": [
+    {"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2},
+    {"sepal_length": 6.2, "sepal_width": 3.4, "petal_length": 5.4, "petal_width": 2.3}
+  ]
+}
+
+
+Response:
+
+{
+  "predictions": [
+    {"prediction": "setosa", "confidence": 0.99},
+    {"prediction": "virginica", "confidence": 0.97}
+  ]
+}
 
 
